@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Lost & Found</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1>Campus Lost & Found</h1>
+</header>
+
+<main class="dashboard">
+
+  <!-- LEFT PANEL -->
+  <aside class="form-panel">
+    <h2>Submit Report</h2>
+  
+    <form id="itemForm">
+    <input type="text" name="title" placeholder="Item Title" required>
+    <textarea name="description" placeholder="Description" required></textarea>
+    <select name="category" required>
+    <option value="Lost">Lost</option>
+    <option value="Found">Found</option>
+    </select>
+    <input type="text" name="location" placeholder="Location" required>
+    <input type="date" name="date" required>
+    <input type="text" name="contact" placeholder="Contact Info" required>
+    <button type="submit">Submit</button>
+    </form>
+  </aside>
+
+  <!-- RIGHT PANEL -->
+  <section class="list-panel">
+
+    <!-- SEARCH & SORT -->
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search item...">
+      <select id="sortSelect">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+
+    <div id="items" class="card-grid"></div>
+
+  </section>
+
+</main>
+
+<script src="js/main.js" defer></script>
+<div id="toast" class="toast"></div>
+</body>
+
+</html>

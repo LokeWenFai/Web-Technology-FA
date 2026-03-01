@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit Item</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Submit Lost/Found Item</h2>
+
+<form id="itemForm">
+<input type="text" name="title" placeholder="Title" required>
+<textarea name="description" placeholder="Description" required></textarea>
+<select name="category">
+<option value="Lost">Lost</option>
+<option value="Found">Found</option>
+</select>
+<input type="text" name="location" placeholder="Location" required>
+<input type="date" name="date" required>
+<input type="text" name="contact" placeholder="Contact" required>
+<button type="submit">Submit</button>
+</form>
+
+<script src="js/form.js" defer></script>
+</body>
+</html>
